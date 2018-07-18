@@ -2,7 +2,7 @@
 wait_for_db() {
   nslookup mongo
   if ! nc -z mongo 27017; then
-    echo "Waiting for db..."
+    echo "Waiting for db...mmp"
     sleep 2
     wait_for_db
   else
