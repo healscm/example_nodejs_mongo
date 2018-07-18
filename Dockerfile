@@ -16,8 +16,7 @@ RUN npm install -g bower grunt-cli gulp mocha
 # copy app and install deps
 COPY . /src
 RUN cd /src;
-RUN npm install
-
+RUN npm install -d
 RUN chmod +x /src/test-script.sh
 
 EXPOSE 9000
